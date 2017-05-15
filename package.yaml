@@ -1,0 +1,22 @@
+name:           logging-facade-syslog
+version:        "1"
+synopsis:       A logging back-end to syslog(3) for the logging-facade library
+author:         Peter Simons
+maintainer:     Peter Simons <simons@cryp.to>
+license:        BSD3
+license-file:   LICENSE
+github:         peti/logging-facade-syslog
+category:       System
+stability:      stable
+tested-with:    GHC > 7 && < 8.1
+description:    A simple "System.Logging.Facade" back-end for @syslog(3)@ as specified in
+                <http://pubs.opengroup.org/onlinepubs/9699919799/functions/syslog.html POSIX.1-2008>.
+dependencies:
+  - base < 5
+  - logging-facade
+  - hsyslog == 5.*
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - System.Logging.Facade.Syslog
