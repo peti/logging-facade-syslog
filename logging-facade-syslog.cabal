@@ -1,7 +1,3 @@
--- This file has been generated from package.yaml by hpack version 0.17.0.
---
--- see: https://github.com/sol/hpack
-
 name:           logging-facade-syslog
 version:        1
 synopsis:       A logging back-end to syslog(3) for the logging-facade library
@@ -14,7 +10,8 @@ author:         Peter Simons
 maintainer:     Peter Simons <simons@cryp.to>
 license:        BSD3
 license-file:   LICENSE
-tested-with:    GHC > 7.6 && < 8.1
+tested-with:    GHC == 7.6.3, GHC == 7.8.4, GHC == 7.10.3, GHC == 8.0.2
+              , GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.2
 build-type:     Simple
 cabal-version:  >= 1.10
 
